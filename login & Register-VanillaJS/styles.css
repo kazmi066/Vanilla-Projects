@@ -1,0 +1,192 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+:root{
+    --mainColor: black;
+    --bgColor: white; 
+    --borderColor: rgb(245, 86, 71);
+    --inputFields: rgb(236, 236, 236);
+    --warningColor: rgb(255, 52, 52);
+}
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .1rem;
+}
+
+body *{
+    transition: .3s ease;
+}
+
+h1,h2,h3,h4,h5,h6{
+    line-height: .25rem;
+    font-weight: 300;
+    color: var(--mainColor);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h1{
+    font-size: 1.8rem;
+}
+
+h1{
+    font-size: 0.875rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(440px,1fr));
+    place-items: center;
+}
+
+
+.column1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.column2{
+    width: 70%;
+    height: auto;
+    border: 4px solid var(--borderColor);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sign-btns{
+    text-align: center;
+    border-bottom: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sign-btns .sign{
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.sign-btns .sign:hover{
+    color: var(--mainColor);
+    background-color: var(--bgColor);
+    cursor: pointer;
+}
+
+.sign-btns .signin{
+    border-right: 3px solid var(--borderColor);
+}
+
+
+/* Toggle Active Class */
+.active{
+    color: var(--bgColor);
+    background-color: var(--borderColor);
+}
+
+
+/* Form */
+#myForm{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: .05rem;
+    margin: 8px 0px;
+}
+
+#myForm input, #myForm2 input{
+    padding: 1rem 10px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    background-color: var(--inputFields);
+    box-shadow: 0 0 10px rgba(245, 245, 245, 0.3);
+    border: none;
+}
+
+.warning{
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    color: red;
+}
+
+
+#myForm input:focus, #myForm2 input:focus{
+    background-color: rgb(93, 93, 93);
+    color: white;
+    outline: none;
+}
+
+#myForm .passLabel{
+    margin-top: 30px;
+}
+
+#myForm .sign, #myForm2 .sign{
+    width: 50%;
+    margin: auto;
+    margin-top: 3rem;
+    background-color: var(--borderColor);
+    color: var(--bgColor);
+}
+
+#myForm .sign:hover, #myForm2 .sign:hover{
+    cursor: pointer;
+    color: var(--bgColor);
+    background-color: rgb(207, 25, 25);
+}
+
+
+/* Register section */
+
+#register{
+    display: none;
+}
+
+#myForm2{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#myForm2 input{
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 879px) {
+    .column1{
+        opacity: .5;
+        z-index: -2;
+    }
+    .column2{
+        width: 90%;
+        margin-bottom: 100px;
+    }
+}

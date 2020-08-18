@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+
+            <div class="column1">
+                <img src="./assets/3545760.jpg" alt="Image">
+            </div>
+
+            <div class="column2">
+                <div class="sign-btns">
+                    <button class="sign signin active">Sign in</button>
+                    <button class="sign reg">Register</button>
+                </div>
+
+                <div id="signin" class="content">
+                    <form id="myForm">
+                        <label>email: </label>
+                        <input type="email" placeholder="Enter your email" class="email">
+                        <div id="email_error_log" class="warning"></div>
+
+                        <label class="passLabel">Password: </label>
+                        <input type="text" placeholder="Enter your password" class="password">
+                        <div id="pass_error_log" class="warning"></div>
+
+                        <input type="submit" class="sign" id="logBtn" value="Log In">
+                    </form>
+                </div>
+
+                <div id="register" class="content">
+                    <form id="myForm2" name="form2">
+                        <label>First Name: </label>
+                        <input type="text" placeholder="Enter first name" name="firstName" class="firstName">
+                        <div id="first_error" class="warning"></div>
+
+                        <label>Last Name: </label>
+                        <input type="text" placeholder="Enter last name" name="lastName" class="lastName">
+                        <div id="last_error" class="warning"></div>
+
+                        <label>Email: </label>
+                        <input type="email" placeholder="Enter your email" name="email" class="email">
+                        <div id="email_error" class="warning"></div>
+
+                        <label class="passLabel">Password: </label>
+                        <input type="password" placeholder="Enter a strong password" name="password" class="password">
+                        <div id="pass_error" class="warning"></div>
+
+                        <input type="submit" class="sign" id="regBtn" value="Register">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="./code.js"></script>
+</body>
+
+</html>
